@@ -78,6 +78,9 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
+    - name: SSH Session
+      uses: lexbritvin/ssh-session-action@v1.1.0
+      
     - name: Download package
       id: package
       run: |
